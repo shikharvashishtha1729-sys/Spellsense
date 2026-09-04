@@ -1,1 +1,1 @@
-# Spellsence
+# Spellsense
