@@ -1,12 +1,11 @@
 #include "Trie.h"
 #include "WordUtils.h"
-
 #include <iostream>
 #include <fstream>
 using namespace std;
 
 TrieNode::TrieNode() : isEndOfWord(false) {
-    for (int i = 0; i < 26; i++) {
+    for (int i = 0; i < 26; i++){
         children[i] = nullptr;
     }
 }
@@ -31,7 +30,7 @@ void Trie::insert(const string& word) {
 
     for (char ch : word) {
         int index = ch - 'a';
-        if (index < 0 || index >= 26) return;
+        if (index < 0 || index >= 26) return ;
 
         if (current->children[index] == nullptr) {
             current->children[index] = new TrieNode();
