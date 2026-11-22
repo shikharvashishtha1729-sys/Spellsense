@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "Trie.h"
 
 struct Suggestion {
     std::string word;
@@ -14,7 +15,7 @@ struct Suggestion {
 // Results prioritize smaller edit distance, then phonetic matches, then alphabetically.
 std::vector<Suggestion> generateSuggestions(
     const std::string& wrongWord,
-    const std::vector<std::string>& dictionaryWords,
+    const Trie& dictionary,
     int maxDistance = 2
 );
 
