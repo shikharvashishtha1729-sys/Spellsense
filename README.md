@@ -1,6 +1,6 @@
 # SpellSense — Modular C++ Spell Checker
 
-## Features in this version
+## Features
 - Loads dictionary words from `dictionary.txt`(We have used 'dictionary1.txt' for testing)
 - Sanitizes words by keeping alphabetic characters and converting them to lowercase
 - Stores words in a 26-way Trie and supports exact lookup
