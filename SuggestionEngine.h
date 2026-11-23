@@ -12,7 +12,7 @@ struct Suggestion {
 };
 
 // Candidates are accepted only if edit distance <= maxDistance.
-// Results prioritize smaller edit distance, then phonetic matches, then alphabetically.
+// Results prioritize smaller edit distance, phonetic matches, then alphabetically.
 std::vector<Suggestion> generateSuggestions(
     const std::string& wrongWord,
     const Trie& dictionary,
