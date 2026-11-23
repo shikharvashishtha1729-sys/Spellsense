@@ -16,7 +16,7 @@ bool betterSuggestion(const Suggestion& a, const Suggestion& b) {
     return a.word < b.word;
 }
 
-// A custom Min-Heap: the best-ranked suggestion is always at the root.
+
 class SuggestionMinHeap {
 private:
     vector<Suggestion> heap;
