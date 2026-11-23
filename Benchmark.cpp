@@ -36,7 +36,7 @@ vector<Match> prunedSearch(const Trie& trie, const string& query,
 
 template <typename Function>
 double averageMilliseconds(Function function, int repetitions) {
-    // One warm-up run reduces first-run effects.
+    // One warm-up reduces first-run effects.
     function();
     auto start = Clock::now();
     for (int i = 0; i < repetitions; ++i) function();
